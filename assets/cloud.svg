@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f3ff"/>
+      <stop offset="1" stop-color="#cfe6ff"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9cc9f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="180" rx="20" fill="url(#sky)"/>
+  <!-- đám mây -->
+  <g fill="url(#cloud)" stroke="#5a9be0" stroke-width="3">
+    <path d="M60 110 a28 28 0 0 1 8-54 a38 38 0 0 1 72-10 a30 30 0 0 1 48 26 a24 24 0 0 1-6 38 z"/>
+  </g>
+  <!-- mũi tên upload -->
+  <path d="M120 100 v-36 M106 78 l14-14 l14 14" fill="none" stroke="#2f6fb5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- các server nối với mây -->
+  <g stroke="#2f6fb5" stroke-width="3">
+    <line x1="80" y1="110" x2="80" y2="135"/>
+    <line x1="120" y1="110" x2="120" y2="135"/>
+    <line x1="160" y1="110" x2="160" y2="135"/>
+  </g>
+  <g fill="#2f6fb5">
+    <rect x="66" y="135" width="28" height="22" rx="4"/>
+    <rect x="106" y="135" width="28" height="22" rx="4"/>
+    <rect x="146" y="135" width="28" height="22" rx="4"/>
+  </g>
+  <g fill="#7fe08a">
+    <circle cx="73" cy="146" r="3"/>
+    <circle cx="113" cy="146" r="3"/>
+    <circle cx="153" cy="146" r="3"/>
+  </g>
+</svg>

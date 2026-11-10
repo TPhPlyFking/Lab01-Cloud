@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Cloud Website</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+
+<header>
+    <div class="logoCloud">
+        <img class="logo" src="assets/Logo Mark.png" alt="logo"> 
+        <p>Cloudlab</p>
+    </div>
+
+    <div class="infor">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#cloud">Cloud Computing</a>
+            <a href="#services">Services</a>
+            <a href="#deploy">Deployment</a>
+        </nav>
+    </div>
+    
+</header>
+
+<main>
+    <section class="slide-1">
+        <div class="heroText">
+            <p class="introCloud">INTRODUCTION TO CLOUD COMPUTING</p>
+
+            <h1 class="title">My First <br> Cloud Website</h1>
+
+            <div class="information">
+                <p>Trần Phát</p>
+                <p>MSSV: 24110119</p>
+                <p>Lab 01</p>
+            </div>
+
+            <div>
+                <button class="viewDeloy" onclick="location.href='#deploy'">View Deployment</button>
+                <button class="about" onclick="location.href='#about'">About Me</button>
+            </div>
+        </div>
+
+        <div class="heroImage">
+            <img src="assets/cloud.svg" alt="cloud">
+        </div>
+    </section>
+    
+    <section id="about" class="aboutSection">
+        <div class="sectionText">
+            <h2>I'm Trần Phát</h2>
+            <p class="body">
+                I am a student at the Faculty of Information Technology.<br>
+                I enjoy programming and building websites, and in this course<br>
+                I am learning how to publish them to the cloud.
+            </p>
+        </div>
+
+        <div class="infoCard">
+            <div class="infoRow">
+                <p class="key">Full name</p>
+                <p class="value">Trần Phát</p>
+            </div>
+            <div class="infoRow">
+                <p class="key">Student ID</p>
+                <p class="value">24110119</p>
+            </div>
+            <div class="infoRow">
+                <p class="key">Course</p>
+                <p class="value">Introduction to Cloud Computing</p>
+            </div>
+            <div class="infoRow">
+                <p class="key">University</p>
+                <p class="value">HCMC University of Technology and Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cloud" class="cloudSection">
+        <h2>Cloud Computing</h2>
+        <p class="body">
+            Cloud computing means using computing resources such as servers,
+            storage, databases, networking and software over the Internet
+            instead of owning and maintaining them in a local data center.
+            Users can rent exactly what they need, increase or decrease it
+            within minutes, and only pay for what they use. This makes it
+            cheaper and faster to start a project, because there is no need
+            to buy expensive hardware. Cloud providers such as AWS, Microsoft
+            Azure and Google Cloud also take care of maintenance, security
+            updates and backups, so developers can focus on building their
+            applications and reaching users anywhere in the world.
+        </p>
+    </section>
+
+    <section id="services" class="servicesSection">
+        <h2>Cloud Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>IaaS</h3>
+                <p class="sub">Infrastructure as a Service</p>
+                <p class="body">Rent virtual servers, storage and networks. You manage the operating system and applications.</p>
+                <p class="tag">e.g. Amazon EC2</p>
+            </div>
+            <div class="card">
+                <h3>PaaS</h3>
+                <p class="sub">Platform as a Service</p>
+                <p class="body">A ready platform to build and deploy apps without managing servers yourself.</p>
+                <p class="tag">e.g. Google App Engine</p>
+            </div>
+            <div class="card">
+                <h3>SaaS</h3>
+                <p class="sub">Software as a Service</p>
+                <p class="body">Complete software used directly through the browser, with no install or maintenance.</p>
+                <p class="tag">e.g. Gmail</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="deploy" class="deploySection">
+        <div class="sectionText">
+            <h2>Deployment Information</h2>
+            <p class="body">This website is hosted as a static site and is publicly available through HTTPS.</p>
+        </div>
+
+        <div class="deployCard">
+            <div class="infoRow">
+                <p class="key">Platform</p>
+                <p class="value">GitHub Pages</p>
+            </div>
+            <div class="infoRow">
+                <p class="key">Repository</p>
+                <p class="value">github.com/USERNAME/cloud-lab1</p>
+            </div>
+            <div class="infoRow">
+                <p class="key">Public URL</p>
+                <p class="value"><a href="https://USERNAME.github.io/cloud-lab1/">https://USERNAME.github.io/cloud-lab1/</a></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Trần Phát · Introduction to Cloud Computing · Lab 01</p>
+</footer>
+</body>
+</html>
