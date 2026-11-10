@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    padding: 14px max(20px, calc((100% - 1400px) / 2));
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.logoCloud {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoCloud p {
+    font-size: clamp(15px, 1.2vw, 22px);
+    font-weight: bold;
+    margin: 8px;
+}
+
+.logo {
+    width: 28px;
+}
+
+
+header nav a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.slide-1 {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: auto;
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    color: white;
+}
+
+.heroText {
+    padding: 32px 28px;
+}
+
+.introCloud{
+    background: rgba(255, 255, 255, 0.15);
+    width: fit-content;
+    padding: 6px 14px;
+    margin: 0 0 18px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 999px;
+}
+
+.heroImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 24px;
+    border-radius: 28px;
+}
+
+.heroImage img {
+    width: 100%;
+}
+
+
+.information {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.information p {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.title {
+    font-size: clamp(30px, 3.2vw, 44px);
+    line-height: 1.15;
+    margin: 0;
+}
+
+.viewDeloy, .about {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.viewDeloy {
+    background: #FFFFFF;
+    color: #2563EB;
+    border: none;
+}
+
+.about {
+    background: transparent;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+}
+
+
+.aboutSection, .cloudSection, .servicesSection, .deploySection {
+    padding: 72px max(20px, calc((100% - 1400px) / 2));
+}
+
+
+
+h2 {
+    margin: 0 0 16px;
+    font-size: clamp(24px, 2.5vw, 32px);
+    line-height: 1.25;
+    color: #0F172A;
+}
+
+.body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.aboutSection, .deploySection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+}
+
+.sectionText {
+    flex: 1;
+}
+
+.infoCard, .deployCard {
+    width: 100%;
+    max-width: 510px;
+    padding: 16px 32px;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+}
+
+.infoRow {
+    padding: 14px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.infoRow:last-child {
+    border-bottom: none;
+}
+
+.key {
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748B;
+}
+
+.value {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0F172A;
+}
+
+.cloudSection {
+    background: #F8FAFC;
+    text-align: center;
+}
+
+.cloudSection .body {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.servicesSection {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    margin-top: 36px;
+    text-align: left;
+}
+
+.card {
+    flex: 1;
+    padding: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #0F172A;
+}
+
+.sub {
+    margin: 4px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748B;
+}
+
+.card .body {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.tag {
+    display: inline-block;
+    margin: 16px 0 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563EB;
+    background: #EFF6FF;
+    border-radius: 8px;
+}
+
+.deploySection {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 72px 120px;
+    background: #0F172A;
+}
+
+.deploySection h2 {
+    color: #FFFFFF;
+}
+
+.deploySection .body {
+    color: #CBD5E1;
+}
+
+.deploySection .label {
+    color: #60A5FA;
+}
+
+.deployCard {
+    background: #1E293B;
+    border-color: #334155;
+}
+
+.deployCard .infoRow {
+    border-bottom: none;
+}
+
+.deployCard .key {
+    color: #94A3B8;
+}
+
+.deployCard .value {
+    color: #FFFFFF;
+}
+
+.deployCard a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+footer {
+    width: 100;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #94A3B8;
+    background: #0B1120;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .slide-1 {
+        padding: 48px 20px;
+        flex-direction: column;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    .viewDeloy, .about {
+        display: block;
+        width: 100%;
+        margin: 0 0 12px;
+    }
+
+    .aboutSection, .cloudSection, .servicesSection, .deploySection {
+        padding: 56px 20px;
+    }
+
+    .aboutSection, .deploySection {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .infoCard, .deployCard {
+        max-width: none;
+        padding: 8px 20px;
+    }
+}

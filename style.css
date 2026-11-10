@@ -15,7 +15,7 @@ body {
 header {
     display: flex;
     text-align: center;
-    padding: 20px max(20px, calc((100% - 1100px) / 2));
+    padding: 14px max(20px, calc((100% - 1100px) / 2));
     justify-content: space-between;
     align-items: center;
     color: black;
@@ -34,7 +34,7 @@ header {
 }
 
 .logo {
-    width: 32px;
+    width: 28px;
 }
 
 
@@ -46,25 +46,25 @@ header nav a {
 .slide-1 {
     display: flex;
     width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+    padding: 0 max(20px, calc((100% - 1100px) / 2));
     height: auto;
     background: linear-gradient(135deg, #2563EB, #7C3AED);
     justify-content: space-between;
+    gap: 100px;
     align-items: center;
     color: white;
 }
 
 .heroText {
-    padding: 40px 30px;
+    padding: 32px 0;
 }
 
 .introCloud{
     background: rgba(255, 255, 255, 0.15);
     width: fit-content;
-    padding: 8px 16px;
-    margin: 0 0 24px;
-    font-size: 12px;
+    padding: 6px 14px;
+    margin: 0 0 18px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 999px;
@@ -75,8 +75,8 @@ header nav a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 390px;
-    padding: 30px;
+    max-width: 300px;
+    padding: 24px;
     border-radius: 28px;
 }
 
@@ -89,13 +89,13 @@ header nav a {
     display: flex;
     justify-content: flex-start;
     gap: 12px;
-    margin: 24px 0;
+    margin: 18px 0;
 }
 
 .information p {
     margin: 0;
-    padding: 10px 16px;
-    font-size: 15px;
+    padding: 8px 14px;
+    font-size: 14px;
     font-weight: 500;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -103,14 +103,14 @@ header nav a {
 }
 
 .title {
-    font-size: clamp(34px, 4vw, 56px);
+    font-size: clamp(30px, 3.2vw, 44px);
     line-height: 1.15;
     margin: 0;
 }
 
 .viewDeloy, .about {
-    padding: 14px 28px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
@@ -131,21 +131,21 @@ header nav a {
 
 
 .aboutSection, .cloudSection, .servicesSection, .deploySection {
-    padding: 96px max(20px, calc((100% - 1100px) / 2));
+    padding: 72px max(20px, calc((100% - 1100px) / 2));
 }
 
 
 
 h2 {
     margin: 0 0 16px;
-    font-size: clamp(28px, 3vw, 40px);
+    font-size: clamp(24px, 2.5vw, 32px);
     line-height: 1.25;
     color: #0F172A;
 }
 
 .body {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7;
     color: #475569;
 }
@@ -154,7 +154,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 56px;
 }
 
 .sectionText {
@@ -188,7 +188,7 @@ h2 {
 
 .value {
     margin: 0;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     color: #0F172A;
 }
@@ -210,13 +210,13 @@ h2 {
 .cards {
     display: flex;
     gap: 40px;
-    margin-top: 48px;
+    margin-top: 36px;
     text-align: left;
 }
 
 .card {
     flex: 1;
-    padding: 32px;
+    padding: 24px;
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
     border-radius: 16px;
@@ -225,7 +225,7 @@ h2 {
 
 .card h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     color: #0F172A;
 }
 
@@ -237,7 +237,7 @@ h2 {
 }
 
 .card .body {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
@@ -252,8 +252,9 @@ h2 {
     border-radius: 8px;
 }
 
-/* Deployment (nền tối) */
 .deploySection {
+    width: 100%;
+    padding: 72px max(20px, calc((100% - 1100px) / 2));
     background: #0F172A;
 }
 
@@ -291,9 +292,9 @@ h2 {
     text-decoration: none;
 }
 
-/* Footer */
 footer {
-    padding: 32px 20px;
+    width: 100%;
+    padding: 32px max(20px, calc((100% - 1100px) / 2));
     text-align: center;
     font-size: 14px;
     color: #94A3B8;
