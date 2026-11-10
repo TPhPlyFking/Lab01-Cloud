@@ -306,6 +306,17 @@ footer p {
 }
 
 @media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .slide-1 {
         padding: 48px 20px;
         flex-direction: column;
